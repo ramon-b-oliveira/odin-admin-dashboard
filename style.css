@@ -1,4 +1,10 @@
+a {
+    color: #e4e4e4;;
+    text-decoration: none;
+}
+
 .container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -7,9 +13,28 @@
 }
 
 .sidebar {
+    display: grid;
+    grid-auto-rows: min-content;
+    padding: 10px;
+    gap: 60px;
+    color: #e4e4e4;
+    font-size: 20px;
+    font-weight: 800;
     grid-column: 1 / 2;
     grid-row: 1 / 6;
-    background-color: aqua;
+    background-color: rgb(90, 128, 128);
+}
+
+.sidebar h1 {
+    grid-row: 1 / 2;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.sidebar .nav ul,
+.sidebar .help ul {
+    display: grid;
+    gap: 10px;
 }
 
 .header {
