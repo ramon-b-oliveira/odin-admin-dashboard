@@ -1,0 +1,25 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: aqua;
+}
+
+.header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    background-color: pink;
+}
+
+.main-content {
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    background-color: gray;
+}
