@@ -170,7 +170,7 @@ a {
     background-color: white;
     border-radius: 10px;
     width: 460px;
-    height: 200px;
+    height: 160px;
 }
 
 .cardtitle {
@@ -184,7 +184,7 @@ a {
 }
 
 .cardbuttons {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: auto;
     width: 150px;
 }
@@ -195,9 +195,124 @@ a {
 }
 
 .maincontent h4 {
-    justify-self: left;
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     font-weight: 600;
     font-size: 30px;
+}
+
+.rightsidecontent {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / 3;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr;
+    grid-row: 1 / 2;
+    padding: 40px 20px;
+}
+
+.announcements h4 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.announcements .box {
+    display: grid;
+    gap: 20px;
+    padding: 40px 20px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.trending {
+    padding: 40px 20px;
+    grid-row: 2 / 3;
+}
+
+.box {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #adadad;
+    margin-top: 20px;
+    background-color: white;
+}
+.announcement {
+    border-bottom: solid 1px #636363;
+    padding-bottom: 5px;
+}
+
+.announcementtitle {
+    font-weight: 600;
+}
+
+.announcementtext {
+    color: #636363;
+    margin-top: 5px;
+}
+
+.trending .box {
+    display: grid;
+    padding: 40px 20px;
+    gap: 10px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.profile {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 80px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trendingprofiles {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.at {
+    align-self: end;
+    font-size: 20px;
+    font-weight: 400;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.persondesc {
+    color: #adadad;
+    font-size: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#mrwhiskers {
+    background-image: url(assets/pexels-guillaume-meurice-1317844.jpg);
+    background-position-y: 33%;
+    background-position-x: 42%;
+    background-size: 200%;
+}
+
+#meowmeow {
+    background-image: url(assets/pexels-alena-koval-982300.jpg);
+    background-position-y: 27%;
+    background-position-x: 51%;
+    background-size: 155%;
+}
+
+#kittycat {
+    background-image: url(assets/pexels-evg-kowalievska-1170986.jpg);
+    background-position-y: 34%;
+    background-position-x: 61%;
+    background-size: 236%;
+}
+
+#fluff {
+    background-image: url(assets/pexels-just-a-couple-photos-3777622.jpg);
+    background-position-y: 27%;
+    background-position-x: 51%;
+    background-size: 155%;
 }
