@@ -15,19 +15,19 @@ a {
 .sidebar {
     display: grid;
     grid-auto-rows: min-content;
-    padding: 10px;
+    padding: 35px;
     gap: 60px;
-    color: #e4e4e4;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 30px;
     font-weight: 800;
     grid-column: 1 / 2;
     grid-row: 1 / 6;
-    background-color: rgb(90, 128, 128);
+    background-color: #3496ec;
 }
 
 .sidebar h1 {
     grid-row: 1 / 2;
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 900;
 }
 
@@ -37,13 +37,115 @@ a {
     gap: 10px;
 }
 
-.header {
-    grid-column: 2 / 6;
-    grid-row: 1 / 2;
-    background-color: pink;
+.profilepicture {
+    background-image: url(assets/pexels-alexis-ricardo-alaurin-18128533.jpg);
+    background-position-y: center;
+    background-position-x: 75%;
+    background-size: 200%;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
 }
 
-.main-content {
+.header {
+    padding: 10px 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    background-color: rgb(247, 247, 247);
+}
+
+.searchbar {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    height: 45px;
+}
+
+.searchbar button {
+    background-color: transparent;
+    border: none;
+}
+
+.searchbar input {
+    padding: 0 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(207, 224, 238);
+    height: 40px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.userbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.userbar i {
+    justify-self: end;
+}
+
+.username {
+
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.userbar .profilepicture {
+    width: 80px;
+    height: 80px;
+}
+
+.greetings {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 20px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.greetings p span {
+    font-size: 30px;
+}
+
+.buttonscontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.buttons {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    height: 45px;
+    width: 115px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3496ec;
+}
+
+.maincontent {
     grid-column: 2 / 6;
     grid-row: 2 / 6;
     background-color: gray;

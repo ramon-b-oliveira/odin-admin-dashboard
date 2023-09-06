@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4d0a5b4efc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <title>Odin Admin Dashboard</title>
 </head>
 <body class="container">
-    <div class="header"></div>
+    <div class="header">
+        <div class="searchbar">
+            <button><i class="fas fa-search fa-2x"></i></button>
+            <input type="text" id="search">
+        </div>
+        <div class="greetings">
+            <div class="profilepicture"></div>
+            <p>Hi there, <br> <span>Morgan Oakley (@morgan)</span></p>
+        </div>
+        <div class="userbar">
+            <i class="fa-regular fa-bell fa-2x"></i>
+            <div class="profilepicture"></div>
+            <h3 class="username">Morgan Oakley</h3>
+        </div>
+        <div class="buttonscontainer">
+            <button class="buttons">New</button>
+            <button class="buttons">Upload</button>
+            <button class="buttons">Share</button>
+        </div>
+        
+    </div>
+
     <div class="sidebar">
         <h1>Dashboard</h1>
         <div class="nav">
@@ -30,6 +52,6 @@
             </ul>
         </div>
     </div>
-    <div class="main-content"></div>
+    <div class="maincontent"></div>
 </body>
 </html>
