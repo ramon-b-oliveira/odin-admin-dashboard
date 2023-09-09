@@ -4,15 +4,17 @@ a {
 }
 
 .container {
+    position: relative; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    height: 100%;
+    background-color: #3496ec;
 }
 
 .sidebar {
     display: grid;
+    height: calc(100vh - 70px);
     grid-auto-rows: min-content;
     padding: 35px;
     gap: 60px;
